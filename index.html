@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,41 +20,152 @@
 <h1>PLC Hub - Filter by Assessment</h1>
 
 <label for="testSelect"><strong>Select Assessment(s):</strong></label>
-<select id="testSelect" multiple size="10"></select>
-
-<canvas id="barChart"></canvas>
-<canvas id="lineChart"></canvas>
-
+<select id="testSelect" multiple size="10">
+<option value="Electromagnetic Test">Electromagnetic Test</option>
+<option value="GAME Chemical Bonds SEP 2 & 7">GAME Chemical Bonds SEP 2 & 7</option>
+<option value="SCRIMMAGE: Acid and Base Lab">SCRIMMAGE: Acid and Base Lab</option>
+<option value="SCRIMMAGE: Atoms">SCRIMMAGE: Atoms</option>
+<option value="SCRIMMAGE: Balancing #1">SCRIMMAGE: Balancing #1</option>
+<option value="SCRIMMAGE: Balancing #2">SCRIMMAGE: Balancing #2</option>
+<option value="SCRIMMAGE: Balancing Chemical Equations">SCRIMMAGE: Balancing Chemical Equations</option>
+<option value="SCRIMMAGE: Chemical Bonds">SCRIMMAGE: Chemical Bonds</option>
+<option value="SCRIMMAGE: Chemical Bonds/Ionic">SCRIMMAGE: Chemical Bonds/Ionic</option>
+<option value="SCRIMMAGE: Covalent">SCRIMMAGE: Covalent</option>
+<option value="SCRIMMAGE: Ionic">SCRIMMAGE: Ionic</option>
+<option value="SCRIMMAGE: Isotopes">SCRIMMAGE: Isotopes</option>
+<option value="SCRIMMAGE: Lewis Dot">SCRIMMAGE: Lewis Dot</option>
+<option value="SCRIMMAGE: Periodic Table Analysis">SCRIMMAGE: Periodic Table Analysis</option>
+<option value="SCRIMMAGE: Periodic Table Intro">SCRIMMAGE: Periodic Table Intro</option>
+<option value="SCRIMMAGE: Solubility">SCRIMMAGE: Solubility</option>
+<option value="SCRIMMAGE: States of Matter">SCRIMMAGE: States of Matter</option>
+<option value="Scrimmage States of Matter">Scrimmage States of Matter</option>
+<option value="Scrimmage: Atoms">Scrimmage: Atoms</option>
+<option value="Scrimmage: Balancing #1">Scrimmage: Balancing #1</option>
+<option value="Scrimmage: Balancing #2">Scrimmage: Balancing #2</option>
+<option value="Scrimmage: Chemical Bonds">Scrimmage: Chemical Bonds</option>
+<option value="Scrimmage: Chemical Bonds (SEP 7&Ionic 2)">Scrimmage: Chemical Bonds (SEP 7&Ionic 2)</option>
+<option value="Scrimmage: Chemical Bonds Evidence and Ionic">Scrimmage: Chemical Bonds Evidence and Ionic</option>
+<option value="Scrimmage: Covalent">Scrimmage: Covalent</option>
+<option value="Scrimmage: Ionic">Scrimmage: Ionic</option>
+<option value="Scrimmage: Isotopes">Scrimmage: Isotopes</option>
+<option value="Scrimmage: Lewis Dot">Scrimmage: Lewis Dot</option>
+<option value="Scrimmage: Periodic Table Intro">Scrimmage: Periodic Table Intro</option>
+<option value="Scrimmage: Solubility">Scrimmage: Solubility</option>
+<option value="Scrimmage: States of Matter">Scrimmage: States of Matter</option>
+<option value="States of Matter Game(Test)">States of Matter Game(Test)</option>
+<option value="TEST: Acids and Bases">TEST: Acids and Bases</option>
+<option value="TEST: Atoms">TEST: Atoms</option>
+<option value="TEST: Chemical Bonds">TEST: Chemical Bonds</option>
+<option value="TEST: Chemical Bonds (Ionic and SEP7)">TEST: Chemical Bonds (Ionic and SEP7)</option>
+<option value="TEST: Chemical Bonds/Ionic">TEST: Chemical Bonds/Ionic</option>
+<option value="TEST: Chemical Reactions">TEST: Chemical Reactions</option>
+<option value="TEST: Ionic Chemical Bonds">TEST: Ionic Chemical Bonds</option>
+<option value="TEST: Lewis Dot">TEST: Lewis Dot</option>
+<option value="TEST: Periodic Table">TEST: Periodic Table</option>
+<option value="TEST: Solutions, Acids, and Bases">TEST: Solutions, Acids, and Bases</option>
+<option value="TEST: States of Matter">TEST: States of Matter</option>
+<option value="Test : Chemical Bonds">Test : Chemical Bonds</option>
+<option value="Test Solutions, Acids, and Bases">Test Solutions, Acids, and Bases</option>
+<option value="Test: Atoms">Test: Atoms</option>
+<option value="Test: Chemical Bonds">Test: Chemical Bonds</option>
+<option value="Test: Chemical Bonds Covalent and Evidence">Test: Chemical Bonds Covalent and Evidence</option>
+<option value="Test: Chemical Reactions">Test: Chemical Reactions</option>
+<option value="Test: Lewis Dot">Test: Lewis Dot</option>
+<option value="Test: Periodic Table">Test: Periodic Table</option>
+<option value="Test: States of Matter">Test: States of Matter</option></select>
+<canvas id="barChart"></canvas><canvas id="lineChart"></canvas>
 <h2>Full Assignment Table</h2>
-<table id="dataTable">
-  <thead>
-    <tr><th>Assignment</th><th>Skill</th><th>Students</th><th>%4s</th><th>%3s</th><th>%2s</th><th>%1s</th><th>% Proficient</th></tr>
-  </thead>
-  <tbody></tbody>
-</table>
+<table>
+<thead><tr><th>Assignment</th><th>Skill</th><th>Students</th><th>%4s</th><th>%3s</th><th>%2s</th><th>%1s</th><th>% Proficient</th></tr></thead><tbody>
+<tr><td>Electromagnetic Test</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>272</td><td>0.0</td><td>69.5</td><td>26.1</td><td>1.5</td><td>69.5</td></tr>
+<tr><td>GAME Chemical Bonds SEP 2 & 7</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>40</td><td>0.0</td><td>25.0</td><td>47.5</td><td>20.0</td><td>25.0</td></tr>
+<tr><td>GAME Chemical Bonds SEP 2 & 7</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>40</td><td>0.0</td><td>17.5</td><td>67.5</td><td>7.5</td><td>17.5</td></tr>
+<tr><td>SCRIMMAGE: Acid and Base Lab</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>176</td><td>0.0</td><td>43.2</td><td>30.7</td><td>11.4</td><td>43.2</td></tr>
+<tr><td>SCRIMMAGE: Atoms</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>322</td><td>0.0</td><td>52.2</td><td>28.6</td><td>11.8</td><td>52.2</td></tr>
+<tr><td>SCRIMMAGE: Balancing #1</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>189</td><td>0.0</td><td>55.0</td><td>21.7</td><td>15.3</td><td>55.0</td></tr>
+<tr><td>SCRIMMAGE: Balancing #2</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>228</td><td>0.0</td><td>28.1</td><td>37.7</td><td>14.0</td><td>28.1</td></tr>
+<tr><td>SCRIMMAGE: Balancing Chemical Equations</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>83</td><td>0.0</td><td>56.6</td><td>25.3</td><td>16.9</td><td>56.6</td></tr>
+<tr><td>SCRIMMAGE: Balancing Chemical Equations</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>83</td><td>0.0</td><td>59.0</td><td>18.1</td><td>21.7</td><td>59.0</td></tr>
+<tr><td>SCRIMMAGE: Chemical Bonds</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>116</td><td>0.0</td><td>52.6</td><td>30.2</td><td>17.2</td><td>52.6</td></tr>
+<tr><td>SCRIMMAGE: Chemical Bonds</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>116</td><td>0.0</td><td>37.1</td><td>44.0</td><td>19.0</td><td>37.1</td></tr>
+<tr><td>SCRIMMAGE: Chemical Bonds/Ionic</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>112</td><td>0.0</td><td>37.5</td><td>20.5</td><td>28.6</td><td>37.5</td></tr>
+<tr><td>SCRIMMAGE: Chemical Bonds/Ionic</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>112</td><td>0.0</td><td>38.4</td><td>7.1</td><td>41.1</td><td>38.4</td></tr>
+<tr><td>SCRIMMAGE: Covalent</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>326</td><td>0.0</td><td>51.8</td><td>24.5</td><td>6.7</td><td>51.8</td></tr>
+<tr><td>SCRIMMAGE: Ionic</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>392</td><td>0.0</td><td>37.0</td><td>36.5</td><td>13.8</td><td>37.0</td></tr>
+<tr><td>SCRIMMAGE: Isotopes</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>422</td><td>0.0</td><td>53.1</td><td>22.7</td><td>13.0</td><td>53.1</td></tr>
+<tr><td>SCRIMMAGE: Lewis Dot</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>423</td><td>0.0</td><td>45.2</td><td>27.0</td><td>17.7</td><td>45.2</td></tr>
+<tr><td>SCRIMMAGE: Periodic Table Analysis</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>419</td><td>0.0</td><td>54.7</td><td>29.1</td><td>5.7</td><td>54.7</td></tr>
+<tr><td>SCRIMMAGE: Periodic Table Intro</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>373</td><td>0.0</td><td>52.5</td><td>29.0</td><td>8.0</td><td>52.5</td></tr>
+<tr><td>SCRIMMAGE: Solubility</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>196</td><td>0.0</td><td>47.4</td><td>29.6</td><td>7.7</td><td>47.4</td></tr>
+<tr><td>SCRIMMAGE: States of Matter</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>390</td><td>0.0</td><td>42.1</td><td>30.3</td><td>21.8</td><td>42.1</td></tr>
+<tr><td>SCRIMMAGE: States of Matter</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>390</td><td>0.0</td><td>54.1</td><td>31.5</td><td>9.5</td><td>54.1</td></tr>
+<tr><td>Scrimmage States of Matter</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>55</td><td>0.0</td><td>43.6</td><td>32.7</td><td>21.8</td><td>43.6</td></tr>
+<tr><td>Scrimmage States of Matter</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>56</td><td>0.0</td><td>42.9</td><td>44.6</td><td>10.7</td><td>42.9</td></tr>
+<tr><td>Scrimmage: Atoms</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>216</td><td>0.0</td><td>39.8</td><td>31.9</td><td>24.1</td><td>39.8</td></tr>
+<tr><td>Scrimmage: Balancing #1</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>85</td><td>0.0</td><td>38.8</td><td>28.2</td><td>24.7</td><td>38.8</td></tr>
+<tr><td>Scrimmage: Balancing #2</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>195</td><td>0.0</td><td>30.3</td><td>41.0</td><td>25.6</td><td>30.3</td></tr>
+<tr><td>Scrimmage: Chemical Bonds</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>126</td><td>0.0</td><td>31.0</td><td>40.5</td><td>27.8</td><td>31.0</td></tr>
+<tr><td>Scrimmage: Chemical Bonds</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>126</td><td>0.0</td><td>34.9</td><td>34.1</td><td>30.2</td><td>34.9</td></tr>
+<tr><td>Scrimmage: Chemical Bonds (SEP 7&Ionic 2)</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>18</td><td>0.0</td><td>66.7</td><td>27.8</td><td>5.6</td><td>66.7</td></tr>
+<tr><td>Scrimmage: Chemical Bonds (SEP 7&Ionic 2)</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>18</td><td>0.0</td><td>66.7</td><td>22.2</td><td>11.1</td><td>66.7</td></tr>
+<tr><td>Scrimmage: Chemical Bonds Evidence and Ionic</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>71</td><td>0.0</td><td>63.4</td><td>19.7</td><td>11.3</td><td>63.4</td></tr>
+<tr><td>Scrimmage: Chemical Bonds Evidence and Ionic</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>71</td><td>0.0</td><td>47.9</td><td>29.6</td><td>18.3</td><td>47.9</td></tr>
+<tr><td>Scrimmage: Covalent</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>127</td><td>0.0</td><td>31.5</td><td>47.2</td><td>19.7</td><td>31.5</td></tr>
+<tr><td>Scrimmage: Ionic</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>145</td><td>0.0</td><td>41.4</td><td>35.2</td><td>17.2</td><td>41.4</td></tr>
+<tr><td>Scrimmage: Isotopes</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>128</td><td>0.0</td><td>34.4</td><td>28.9</td><td>33.6</td><td>34.4</td></tr>
+<tr><td>Scrimmage: Lewis Dot</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>73</td><td>0.0</td><td>43.8</td><td>26.0</td><td>23.3</td><td>43.8</td></tr>
+<tr><td>Scrimmage: Periodic Table Intro</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>143</td><td>0.0</td><td>34.3</td><td>41.3</td><td>16.1</td><td>34.3</td></tr>
+<tr><td>Scrimmage: Solubility</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>86</td><td>0.0</td><td>65.1</td><td>22.1</td><td>3.5</td><td>65.1</td></tr>
+<tr><td>Scrimmage: States of Matter</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>215</td><td>0.0</td><td>48.4</td><td>28.8</td><td>15.8</td><td>48.4</td></tr>
+<tr><td>Scrimmage: States of Matter</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>215</td><td>0.0</td><td>44.2</td><td>29.3</td><td>19.5</td><td>44.2</td></tr>
+<tr><td>States of Matter Game(Test)</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>72</td><td>0.0</td><td>66.7</td><td>26.4</td><td>5.6</td><td>66.7</td></tr>
+<tr><td>States of Matter Game(Test)</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>72</td><td>0.0</td><td>81.9</td><td>16.7</td><td>0.0</td><td>81.9</td></tr>
+<tr><td>TEST: Acids and Bases</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>18</td><td>5.6</td><td>44.4</td><td>27.8</td><td>0.0</td><td>50.0</td></tr>
+<tr><td>TEST: Acids and Bases</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>18</td><td>0.0</td><td>38.9</td><td>33.3</td><td>5.6</td><td>38.9</td></tr>
+<tr><td>TEST: Atoms</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>421</td><td>0.0</td><td>60.6</td><td>27.1</td><td>8.8</td><td>60.6</td></tr>
+<tr><td>TEST: Atoms</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>421</td><td>0.0</td><td>63.4</td><td>25.7</td><td>7.6</td><td>63.4</td></tr>
+<tr><td>TEST: Chemical Bonds</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>153</td><td>0.0</td><td>48.4</td><td>39.2</td><td>8.5</td><td>48.4</td></tr>
+<tr><td>TEST: Chemical Bonds</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>153</td><td>0.0</td><td>58.8</td><td>24.8</td><td>12.4</td><td>58.8</td></tr>
+<tr><td>TEST: Chemical Bonds (Ionic and SEP7)</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>18</td><td>0.0</td><td>66.7</td><td>27.8</td><td>5.6</td><td>66.7</td></tr>
+<tr><td>TEST: Chemical Bonds (Ionic and SEP7)</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>18</td><td>0.0</td><td>66.7</td><td>16.7</td><td>16.7</td><td>66.7</td></tr>
+<tr><td>TEST: Chemical Bonds/Ionic</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>111</td><td>0.0</td><td>43.2</td><td>31.5</td><td>22.5</td><td>43.2</td></tr>
+<tr><td>TEST: Chemical Bonds/Ionic</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>111</td><td>0.9</td><td>54.1</td><td>26.1</td><td>16.2</td><td>55.0</td></tr>
+<tr><td>TEST: Chemical Reactions</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>214</td><td>0.0</td><td>55.1</td><td>23.8</td><td>14.0</td><td>55.1</td></tr>
+<tr><td>TEST: Chemical Reactions</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>214</td><td>3.3</td><td>59.3</td><td>18.7</td><td>12.6</td><td>62.6</td></tr>
+<tr><td>TEST: Ionic Chemical Bonds</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>84</td><td>0.0</td><td>45.2</td><td>31.0</td><td>20.2</td><td>45.2</td></tr>
+<tr><td>TEST: Ionic Chemical Bonds</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>84</td><td>0.0</td><td>38.1</td><td>41.7</td><td>16.7</td><td>38.1</td></tr>
+<tr><td>TEST: Lewis Dot</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>351</td><td>0.0</td><td>67.0</td><td>22.8</td><td>7.4</td><td>67.0</td></tr>
+<tr><td>TEST: Periodic Table</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>393</td><td>0.5</td><td>73.3</td><td>22.9</td><td>1.8</td><td>73.8</td></tr>
+<tr><td>TEST: Solutions, Acids, and Bases</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>111</td><td>0.0</td><td>56.8</td><td>25.2</td><td>8.1</td><td>56.8</td></tr>
+<tr><td>TEST: Solutions, Acids, and Bases</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>111</td><td>0.0</td><td>56.8</td><td>19.8</td><td>13.5</td><td>56.8</td></tr>
+<tr><td>TEST: States of Matter</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>288</td><td>0.0</td><td>54.2</td><td>41.3</td><td>2.1</td><td>54.2</td></tr>
+<tr><td>TEST: States of Matter</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>288</td><td>0.0</td><td>53.1</td><td>35.4</td><td>9.0</td><td>53.1</td></tr>
+<tr><td>Test : Chemical Bonds</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>57</td><td>0.0</td><td>49.1</td><td>36.8</td><td>7.0</td><td>49.1</td></tr>
+<tr><td>Test : Chemical Bonds</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>57</td><td>0.0</td><td>52.6</td><td>26.3</td><td>14.0</td><td>52.6</td></tr>
+<tr><td>Test Solutions, Acids, and Bases</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>71</td><td>0.0</td><td>57.7</td><td>35.2</td><td>1.4</td><td>57.7</td></tr>
+<tr><td>Test Solutions, Acids, and Bases</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>71</td><td>0.0</td><td>73.2</td><td>16.9</td><td>4.2</td><td>73.2</td></tr>
+<tr><td>Test: Atoms</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>255</td><td>0.0</td><td>56.1</td><td>27.8</td><td>14.1</td><td>56.1</td></tr>
+<tr><td>Test: Atoms</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>255</td><td>0.0</td><td>50.6</td><td>34.5</td><td>13.3</td><td>50.6</td></tr>
+<tr><td>Test: Chemical Bonds</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>124</td><td>0.0</td><td>30.6</td><td>36.3</td><td>29.0</td><td>30.6</td></tr>
+<tr><td>Test: Chemical Bonds</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>124</td><td>0.0</td><td>30.6</td><td>33.9</td><td>31.5</td><td>30.6</td></tr>
+<tr><td>Test: Chemical Bonds Covalent and Evidence</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>71</td><td>0.0</td><td>81.7</td><td>9.9</td><td>5.6</td><td>81.7</td></tr>
+<tr><td>Test: Chemical Bonds Covalent and Evidence</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>71</td><td>0.0</td><td>56.3</td><td>26.8</td><td>14.1</td><td>56.3</td></tr>
+<tr><td>Test: Chemical Reactions</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>71</td><td>0.0</td><td>69.0</td><td>1.4</td><td>22.5</td><td>69.0</td></tr>
+<tr><td>Test: Chemical Reactions</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>71</td><td>2.8</td><td>64.8</td><td>16.9</td><td>9.9</td><td>67.6</td></tr>
+<tr><td>Test: Lewis Dot</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>198</td><td>0.0</td><td>67.2</td><td>10.1</td><td>20.7</td><td>67.2</td></tr>
+<tr><td>Test: Periodic Table</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>217</td><td>0.0</td><td>65.0</td><td>24.0</td><td>10.1</td><td>65.0</td></tr>
+<tr><td>Test: States of Matter</td><td>Modeling & Communication(SEP2 & SEP8) - Modeling & Communication</td><td>320</td><td>0.0</td><td>52.8</td><td>31.9</td><td>12.8</td><td>52.8</td></tr>
+<tr><td>Test: States of Matter</td><td>Scientific Writing (SEP6 & SEP7) - Scientific Writing</td><td>320</td><td>0.0</td><td>55.6</td><td>31.6</td><td>10.3</td><td>55.6</td></tr>
+
+</tbody></table>
 
 <script>
-const data = [
-  { "name": "Atoms", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 60.4, "2s": 26.7, "1s": 9.8, "proficient": 60.4, "students": 722 },
-  { "name": "Chemical Reactions", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 48.8, "2s": 32.9, "1s": 15.5, "proficient": 48.8, "students": 653 },
-  { "name": "States of Matter", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 54.3, "2s": 33.6, "1s": 9.4, "proficient": 54.3, "students": 724 },
-  { "name": "Isotopes", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 64.2, "2s": 24.8, "1s": 9.0, "proficient": 64.2, "students": 709 },
-  { "name": "Balancing #2", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 59.5, "2s": 26.6, "1s": 10.5, "proficient": 59.5, "students": 707 }
-];
+const data = [{"name": "Electromagnetic Test", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 69.5, "2s": 26.1, "1s": 1.5, "proficient": 69.5}, {"name": "SCRIMMAGE: States of Matter", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 42.1, "2s": 30.3, "1s": 21.8, "proficient": 42.1}, {"name": "SCRIMMAGE: States of Matter", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 54.1, "2s": 31.5, "1s": 9.5, "proficient": 54.1}, {"name": "Scrimmage: States of Matter", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 44.2, "2s": 29.3, "1s": 19.5, "proficient": 44.2}, {"name": "Scrimmage: States of Matter", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 48.4, "2s": 28.8, "1s": 15.8, "proficient": 48.4}, {"name": "States of Matter Game(Test)", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 81.9, "2s": 16.7, "1s": 0.0, "proficient": 81.9}, {"name": "States of Matter Game(Test)", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 66.7, "2s": 26.4, "1s": 5.6, "proficient": 66.7}, {"name": "Test: States of Matter", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 52.8, "2s": 31.9, "1s": 12.8, "proficient": 52.8}, {"name": "Test: States of Matter", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 55.6, "2s": 31.6, "1s": 10.3, "proficient": 55.6}, {"name": "Scrimmage States of Matter", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 42.9, "2s": 44.6, "1s": 10.7, "proficient": 42.9}, {"name": "Scrimmage States of Matter", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 43.6, "2s": 32.7, "1s": 21.8, "proficient": 43.6}, {"name": "TEST: States of Matter", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 54.2, "2s": 41.3, "1s": 2.1, "proficient": 54.2}, {"name": "TEST: States of Matter", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 53.1, "2s": 35.4, "1s": 9.0, "proficient": 53.1}, {"name": "SCRIMMAGE: Isotopes", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 53.1, "2s": 22.7, "1s": 13.0, "proficient": 53.1}, {"name": "SCRIMMAGE: Atoms", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 52.2, "2s": 28.6, "1s": 11.8, "proficient": 52.2}, {"name": "Scrimmage: Isotopes", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 34.4, "2s": 28.9, "1s": 33.6, "proficient": 34.4}, {"name": "Scrimmage: Atoms", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 39.8, "2s": 31.9, "1s": 24.1, "proficient": 39.8}, {"name": "Test: Atoms", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 56.1, "2s": 27.8, "1s": 14.1, "proficient": 56.1}, {"name": "Test: Atoms", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 50.6, "2s": 34.5, "1s": 13.3, "proficient": 50.6}, {"name": "TEST: Atoms", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 63.4, "2s": 25.7, "1s": 7.6, "proficient": 63.4}, {"name": "TEST: Atoms", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 60.6, "2s": 27.1, "1s": 8.8, "proficient": 60.6}, {"name": "Scrimmage: Periodic Table Intro", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 34.3, "2s": 41.3, "1s": 16.1, "proficient": 34.3}, {"name": "SCRIMMAGE: Periodic Table Intro", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 52.5, "2s": 29.0, "1s": 8.0, "proficient": 52.5}, {"name": "SCRIMMAGE: Periodic Table Analysis", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 54.7, "2s": 29.1, "1s": 5.7, "proficient": 54.7}, {"name": "TEST: Periodic Table", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.5, "3s": 73.3, "2s": 22.9, "1s": 1.8, "proficient": 73.8}, {"name": "Test: Periodic Table", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 65.0, "2s": 24.0, "1s": 10.1, "proficient": 65.0}, {"name": "SCRIMMAGE: Lewis Dot", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 45.2, "2s": 27.0, "1s": 17.7, "proficient": 45.2}, {"name": "Scrimmage: Lewis Dot", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 43.8, "2s": 26.0, "1s": 23.3, "proficient": 43.8}, {"name": "TEST: Lewis Dot", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 67.0, "2s": 22.8, "1s": 7.4, "proficient": 67.0}, {"name": "Test: Lewis Dot", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 67.2, "2s": 10.1, "1s": 20.7, "proficient": 67.2}, {"name": "Scrimmage: Covalent", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 31.5, "2s": 47.2, "1s": 19.7, "proficient": 31.5}, {"name": "SCRIMMAGE: Ionic", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 37.0, "2s": 36.5, "1s": 13.8, "proficient": 37.0}, {"name": "Scrimmage: Ionic", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 41.4, "2s": 35.2, "1s": 17.2, "proficient": 41.4}, {"name": "Scrimmage: Chemical Bonds Evidence and Ionic", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 63.4, "2s": 19.7, "1s": 11.3, "proficient": 63.4}, {"name": "Scrimmage: Chemical Bonds Evidence and Ionic", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 47.9, "2s": 29.6, "1s": 18.3, "proficient": 47.9}, {"name": "SCRIMMAGE: Covalent", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 51.8, "2s": 24.5, "1s": 6.7, "proficient": 51.8}, {"name": "TEST: Chemical Bonds/Ionic", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.9, "3s": 54.1, "2s": 26.1, "1s": 16.2, "proficient": 55.0}, {"name": "TEST: Chemical Bonds/Ionic", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 43.2, "2s": 31.5, "1s": 22.5, "proficient": 43.2}, {"name": "SCRIMMAGE: Chemical Bonds/Ionic", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 37.5, "2s": 20.5, "1s": 28.6, "proficient": 37.5}, {"name": "SCRIMMAGE: Chemical Bonds/Ionic", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 38.4, "2s": 7.1, "1s": 41.1, "proficient": 38.4}, {"name": "Scrimmage: Chemical Bonds", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 34.9, "2s": 34.1, "1s": 30.2, "proficient": 34.9}, {"name": "Scrimmage: Chemical Bonds", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 31.0, "2s": 40.5, "1s": 27.8, "proficient": 31.0}, {"name": "Test: Chemical Bonds", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 30.6, "2s": 33.9, "1s": 31.5, "proficient": 30.6}, {"name": "Scrimmage: Chemical Bonds (SEP 7&Ionic 2)", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 66.7, "2s": 27.8, "1s": 5.6, "proficient": 66.7}, {"name": "Scrimmage: Chemical Bonds (SEP 7&Ionic 2)", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 66.7, "2s": 22.2, "1s": 11.1, "proficient": 66.7}, {"name": "Test: Chemical Bonds", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 30.6, "2s": 36.3, "1s": 29.0, "proficient": 30.6}, {"name": "TEST: Chemical Bonds (Ionic and SEP7)", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 66.7, "2s": 27.8, "1s": 5.6, "proficient": 66.7}, {"name": "TEST: Chemical Bonds (Ionic and SEP7)", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 66.7, "2s": 16.7, "1s": 16.7, "proficient": 66.7}, {"name": "Test: Chemical Bonds Covalent and Evidence", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 56.3, "2s": 26.8, "1s": 14.1, "proficient": 56.3}, {"name": "Test: Chemical Bonds Covalent and Evidence", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 81.7, "2s": 9.9, "1s": 5.6, "proficient": 81.7}, {"name": "TEST: Ionic Chemical Bonds", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 38.1, "2s": 41.7, "1s": 16.7, "proficient": 38.1}, {"name": "TEST: Ionic Chemical Bonds", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 45.2, "2s": 31.0, "1s": 20.2, "proficient": 45.2}, {"name": "Test : Chemical Bonds", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 52.6, "2s": 26.3, "1s": 14.0, "proficient": 52.6}, {"name": "Scrimmage: Balancing #2", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 30.3, "2s": 41.0, "1s": 25.6, "proficient": 30.3}, {"name": "Test : Chemical Bonds", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 49.1, "2s": 36.8, "1s": 7.0, "proficient": 49.1}, {"name": "SCRIMMAGE: Balancing Chemical Equations", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 59.0, "2s": 18.1, "1s": 21.7, "proficient": 59.0}, {"name": "Scrimmage: Balancing #1", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 38.8, "2s": 28.2, "1s": 24.7, "proficient": 38.8}, {"name": "SCRIMMAGE: Balancing Chemical Equations", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 56.6, "2s": 25.3, "1s": 16.9, "proficient": 56.6}, {"name": "SCRIMMAGE: Balancing #1", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 55.0, "2s": 21.7, "1s": 15.3, "proficient": 55.0}, {"name": "SCRIMMAGE: Chemical Bonds", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 37.1, "2s": 44.0, "1s": 19.0, "proficient": 37.1}, {"name": "SCRIMMAGE: Chemical Bonds", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 52.6, "2s": 30.2, "1s": 17.2, "proficient": 52.6}, {"name": "SCRIMMAGE: Balancing #2", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 28.1, "2s": 37.7, "1s": 14.0, "proficient": 28.1}, {"name": "GAME Chemical Bonds SEP 2 & 7", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 17.5, "2s": 67.5, "1s": 7.5, "proficient": 17.5}, {"name": "TEST: Chemical Reactions", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 55.1, "2s": 23.8, "1s": 14.0, "proficient": 55.1}, {"name": "TEST: Chemical Reactions", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 3.3, "3s": 59.3, "2s": 18.7, "1s": 12.6, "proficient": 62.6}, {"name": "TEST: Chemical Bonds", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 58.8, "2s": 24.8, "1s": 12.4, "proficient": 58.8}, {"name": "TEST: Chemical Bonds", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 48.4, "2s": 39.2, "1s": 8.5, "proficient": 48.4}, {"name": "Test: Chemical Reactions", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 69.0, "2s": 1.4, "1s": 22.5, "proficient": 69.0}, {"name": "Test: Chemical Reactions", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 2.8, "3s": 64.8, "2s": 16.9, "1s": 9.9, "proficient": 67.6}, {"name": "GAME Chemical Bonds SEP 2 & 7", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 25.0, "2s": 47.5, "1s": 20.0, "proficient": 25.0}, {"name": "SCRIMMAGE: Solubility", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 47.4, "2s": 29.6, "1s": 7.7, "proficient": 47.4}, {"name": "Scrimmage: Solubility", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 65.1, "2s": 22.1, "1s": 3.5, "proficient": 65.1}, {"name": "SCRIMMAGE: Acid and Base Lab", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 43.2, "2s": 30.7, "1s": 11.4, "proficient": 43.2}, {"name": "TEST: Solutions, Acids, and Bases", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 56.8, "2s": 19.8, "1s": 13.5, "proficient": 56.8}, {"name": "TEST: Solutions, Acids, and Bases", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 56.8, "2s": 25.2, "1s": 8.1, "proficient": 56.8}, {"name": "TEST: Acids and Bases", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 5.6, "3s": 44.4, "2s": 27.8, "1s": 0.0, "proficient": 50.0}, {"name": "Test Solutions, Acids, and Bases", "skill": "Scientific Writing (SEP6 & SEP7) - Scientific Writing", "4s": 0.0, "3s": 73.2, "2s": 16.9, "1s": 4.2, "proficient": 73.2}, {"name": "Test Solutions, Acids, and Bases", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 57.7, "2s": 35.2, "1s": 1.4, "proficient": 57.7}, {"name": "TEST: Acids and Bases", "skill": "Modeling & Communication(SEP2 & SEP8) - Modeling & Communication", "4s": 0.0, "3s": 38.9, "2s": 33.3, "1s": 5.6, "proficient": 38.9}];
 
 const testSelect = document.getElementById('testSelect');
 const barCtx = document.getElementById('barChart').getContext('2d');
 const lineCtx = document.getElementById('lineChart').getContext('2d');
 let barChart, lineChart;
-
-// Populate dropdown
-const assessments = [...new Set(data.map(d => d.name))].sort();
-assessments.forEach(name => {
-  const opt = document.createElement('option');
-  opt.value = name;
-  opt.textContent = name;
-  testSelect.appendChild(opt);
-});
 
 function updateCharts() {
   const selected = Array.from(testSelect.selectedOptions).map(o => o.value);
@@ -127,16 +240,6 @@ function updateCharts() {
     }
   });
 }
-
-// Table display
-const tableBody = document.querySelector('#dataTable tbody');
-data.forEach(row => {
-  const tr = document.createElement('tr');
-  tr.innerHTML = `<td>${row.name}</td><td>${row.skill}</td><td>${row.students}</td>
-    <td>${row["4s"]}</td><td>${row["3s"]}</td><td>${row["2s"]}</td><td>${row["1s"]}</td>
-    <td>${row.proficient}</td>`;
-  tableBody.appendChild(tr);
-});
 
 testSelect.addEventListener('change', updateCharts);
 </script>
