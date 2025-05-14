@@ -32,12 +32,20 @@
 </table>
 
 <script>
-const data = REPLACE_ME_WITH_YOUR_DATA;
+const data = [
+  { "name": "Atoms", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 60.4, "2s": 26.7, "1s": 9.8, "proficient": 60.4, "students": 722 },
+  { "name": "Chemical Reactions", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 48.8, "2s": 32.9, "1s": 15.5, "proficient": 48.8, "students": 653 },
+  { "name": "States of Matter", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 54.3, "2s": 33.6, "1s": 9.4, "proficient": 54.3, "students": 724 },
+  { "name": "Isotopes", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 64.2, "2s": 24.8, "1s": 9.0, "proficient": 64.2, "students": 709 },
+  { "name": "Balancing #2", "skill": "Scientific Writing (SEP6 & SEP7)", "4s": 0.0, "3s": 59.5, "2s": 26.6, "1s": 10.5, "proficient": 59.5, "students": 707 }
+];
+
 const testSelect = document.getElementById('testSelect');
 const barCtx = document.getElementById('barChart').getContext('2d');
 const lineCtx = document.getElementById('lineChart').getContext('2d');
 let barChart, lineChart;
 
+// Populate dropdown
 const assessments = [...new Set(data.map(d => d.name))].sort();
 assessments.forEach(name => {
   const opt = document.createElement('option');
@@ -120,9 +128,7 @@ function updateCharts() {
   });
 }
 
-testSelect.addEventListener('change', updateCharts);
-
-// Populate data table
+// Table display
 const tableBody = document.querySelector('#dataTable tbody');
 data.forEach(row => {
   const tr = document.createElement('tr');
@@ -131,6 +137,8 @@ data.forEach(row => {
     <td>${row.proficient}</td>`;
   tableBody.appendChild(tr);
 });
+
+testSelect.addEventListener('change', updateCharts);
 </script>
 
 </body>
