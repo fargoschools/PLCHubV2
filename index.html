@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PLC Hub - Filter by Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    select, label { font-size: 14px; margin-right: 10px; }
+    canvas { max-width: 100%; margin-top: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 40px; font-size: 14px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+
+<h1>PLC Hub - Filter by Assessment</h1>
+
+<label for="testSelect"><strong>Select Assessment(s):</strong></label>
+<select id="testSelect" multiple size="10"></select>
+
+<canvas id="barChart"></canvas>
+<canvas id="lineChart"></canvas>
+
+<h2>Full Assignment Table</h2>
+<table id="dataTable">
+  <thead>
+    <tr><th>Assignment</th><th>Skill</th><th>Students</th><th>%4s</th><th>%3s</th><th>%2s</th><th>%1s</th><th>% Proficient</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+const data = REPLACE_ME_WITH_YOUR_DATA;
+const testSelect = document.getElementById('testSelect');
+const barCtx = document.getElementById('barChart').getContext('2d');
+const lineCtx = document.getElementById('lineChart').getContext('2d');
+let barChart, lineChart;
+
+const assessments = [...new Set(data.map(d => d.name))].sort();
+assessments.forEach(name => {
+  const opt = document.createElement('option');
+  opt.value = name;
+  opt.textContent = name;
+  testSelect.appendChild(opt);
+});
+
+function updateCharts() {
+  const selected = Array.from(testSelect.selectedOptions).map(o => o.value);
+  if (
+
