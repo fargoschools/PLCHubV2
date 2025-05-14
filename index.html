@@ -48,5 +48,90 @@ assessments.forEach(name => {
 
 function updateCharts() {
   const selected = Array.from(testSelect.selectedOptions).map(o => o.value);
-  if (
+  if (selected.length === 0) {
+    if (barChart) barChart.destroy();
+    if (lineChart) lineChart.destroy();
+    return;
+  }
 
+  const filtered = data.filter(d => selected.includes(d.name));
+  const labels = filtered.map(d => d.name);
+
+  const barData = {
+    labels: ["4s", "3s", "2s", "1s"],
+    datasets: filtered.map((entry, i) => ({
+      label: entry.name + ' (Skill: ' + entry.skill + ')',
+      data: [entry["4s"], entry["3s"], entry["2s"], entry["1s"]],
+      backgroundColor: `hsl(${i * 50 % 360}, 60%, 60%)`
+    }))
+  };
+  if (barChart) barChart.destroy();
+  barChart = new Chart(barCtx, {
+    type: 'bar',
+    data: barData,
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: '% Distribution by Proficiency Level'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100,
+          title: { display: true, text: '% of Students' }
+        }
+      }
+    }
+  });
+
+  const lineData = {
+    labels: labels,
+    datasets: [{
+      label: "% Proficient (4s+3s)",
+      data: filtered.map(d => d.proficient),
+      fill: false,
+      borderColor: "cornflowerblue",
+      tension: 0.3,
+      pointRadius: 5,
+      pointHoverRadius: 7
+    }]
+  };
+  if (lineChart) lineChart.destroy();
+  lineChart = new Chart(lineCtx, {
+    type: 'line',
+    data: lineData,
+    options: {
+      responsive: true,
+      plugins: {
+        title: { display: true, text: 'Proficiency Over Time' }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100,
+          title: { display: true, text: '% Proficient' }
+        },
+        x: { title: { display: true, text: 'Assignment' } }
+      }
+    }
+  });
+}
+
+testSelect.addEventListener('change', updateCharts);
+
+// Populate data table
+const tableBody = document.querySelector('#dataTable tbody');
+data.forEach(row => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `<td>${row.name}</td><td>${row.skill}</td><td>${row.students}</td>
+    <td>${row["4s"]}</td><td>${row["3s"]}</td><td>${row["2s"]}</td><td>${row["1s"]}</td>
+    <td>${row.proficient}</td>`;
+  tableBody.appendChild(tr);
+});
+</script>
+
+</body>
+</html>
